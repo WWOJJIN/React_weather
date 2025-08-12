@@ -4,7 +4,7 @@ import WeatherCard from './components/WeatherCard'
 import { useState, useRef, useEffect } from 'react'
 import { fetchCordinates } from './api/geo'
 import { fetchWeatherByCoords } from './api/weather'
-import { getColorByWeatherId } from './api/bgColor'
+import { getColorByWeatherId } from './api/bgClolr'
 
 function App() {
 
@@ -58,7 +58,7 @@ function App() {
 
   return (
     <section style={{ background: bg, minHeight: '100vh', transition: 'background .3s ease' }}>
-      <div className='app' ></div>
+
       <div className='app'>
         <h1>우진이의 날씨앱</h1>
         <div className="input-wrap">
